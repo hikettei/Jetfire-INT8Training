@@ -78,6 +78,6 @@ class QBlockLinear(nn.Linear):
         self.args = args
         self.layer_type = layer_type
     
-    def forward(self, X83D, SX16)
+    def forward(self, X83D, SX16):
         output = _qblock_linear.apply(X8_3D, SX16, self.weight, self.bias, self.args.B)
         return output
